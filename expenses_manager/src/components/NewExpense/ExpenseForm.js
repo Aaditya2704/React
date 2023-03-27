@@ -45,7 +45,7 @@ export default function ExpenseForm(props) {
     //});
   };
 
-  const submitHandler = (event) => {
+  const submHandler = (event) => {
     event.preventDefault();
 
     const expenseData = {
@@ -60,7 +60,7 @@ export default function ExpenseForm(props) {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
