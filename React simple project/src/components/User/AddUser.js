@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react'
 import classes from './AddUser.module.css'
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 export default function (props) {
@@ -15,7 +16,7 @@ export default function (props) {
           <input id="username" type="text" />
           <label htmlFor='age'>Age(Years)</label>
           <input id="age" type="number" />
-          <button type='submit'>Add User</button>
+          <Button type='submit'>Add User</Button>
       </form>
     </Card>
 
