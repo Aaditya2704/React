@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import classes from './AddUser.module.css'
 import Button from '../UI/Button';
 import Card from '../UI/Card';
+import Wrapper from '../Helpers/Wrapper';
 import ErrorModal from '../UI/ErrorModal';
 
 export default function (props) {
@@ -36,7 +37,7 @@ export default function (props) {
   }
 
   return (
-    <div>
+    <Wrapper>
       {error&&<ErrorModal title={error.title} message={error.message} onConfirm={errorHandler }/>}
     <Card cssClass={classes.input} >
       <form onSubmit={addSubmitHandler}>
@@ -47,7 +48,8 @@ export default function (props) {
           <Button type='submit'>Add User</Button>
       </form>
     </Card>
-    </div>
+    </Wrapper>
+
 
   )
 }
