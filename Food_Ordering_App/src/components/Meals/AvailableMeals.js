@@ -1,4 +1,4 @@
-import classes from "./Available.module.css";
+import classes from "./AvailableMeals.module.css";
 const DUMMY_MEALS = [
   {
     id: "m1",
@@ -25,7 +25,7 @@ const DUMMY_MEALS = [
     price: 18.99,
   },
 ];
-const Available = (props) => {
+const AvailableMeals = (props) => {
   const mealsList = DUMMY_MEALS.map((meal) => <li>{meal.name}</li>);
 
   return (
@@ -34,3 +34,4 @@ const Available = (props) => {
     </section>
   );
 };
+export default AvailableMeals;
