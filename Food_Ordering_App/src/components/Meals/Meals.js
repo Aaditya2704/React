@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+
 import MealsSummary from "./MealsSummary";
 import AvailableMeals from "./AvailableMeals";
 
@@ -10,4 +11,5 @@ const Meals = () => {
     </Fragment>
   );
 };
+
 export default Meals;
